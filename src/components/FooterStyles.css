@@ -1,0 +1,134 @@
+footer{
+    padding: 2% 5%;
+    height: 70vh;
+    background: url(../assets/lasath-jayawardana-8gMoxDLxzPU-unsplash.jpg) no-repeat center/cover;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
+    z-index: 1;
+  }
+
+.upper-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh; /* Set footer height to 50% of the viewport height */
+    padding: 20px;
+    
+    color: white;
+}
+
+.left-side {
+    width: 60%;
+}
+
+.left-side .nav-links .footer-nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.left-side .nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details p {
+    margin: 10px 4rem;
+  }
+  
+  .contact-details a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    color: #ed9b05;
+  }
+
+.right-side {
+    width: 50%; /* Takes up 30% of the footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-side img {
+    width: 150px; /* Adjust the size of sponsor images */
+    height: auto;
+    margin-left: 15px;
+}
+
+.right-side img:hover{
+    transform: scale(1.1); /* Simple hover effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.bottom-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.bottom-side .icon-shortcuts {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .bottom-side .icon-link {
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .bottom-side .icon-link:hover {
+    color: #ed9b05;
+  }
+  
+  .bottom-side .icon-link img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .bottom-side .copyright {
+    font-size: 12px;
+    color: white;
+  }
+
+  @media (max-width: 450px){
+    .footer {
+      height: 70vh;
+      position: relative;
+      background: url(/images/footer.jpg); /* Dark background color */
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      }
+  
+      .bottom-side {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 30px;
+        margin-top: 50px;
+        }
+  }
