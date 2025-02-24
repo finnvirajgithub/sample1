@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import './FooterStyles.css'
+import SoSrilanka from '../assets/sosrilanka.png'
+import Tripadvisor from '../assets/tourradar.png'
+import tourradar from '../assets/tripadvisor.png'
 
 const Footer = () => (
     
@@ -22,9 +25,9 @@ const Footer = () => (
                 </div>
             </div>
             <div className="right-side">
-                <img src="src/assets/sosrilanka.png" alt="sltda" />
-                <img src="src/assets/tourradar.png" alt="tourradar" />
-                <img src="src/assets/tripadvisor.png" alt="tripadvisor" />
+                <img src={SoSrilanka} alt="sltda" />
+                <img src={Tripadvisor} alt="tourradar" />
+                <img src={tourradar} alt="tripadvisor" />
 
             </div>
 
