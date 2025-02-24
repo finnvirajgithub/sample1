@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Packages from "../components/Packages";
+import HomeImg from "../assets/11.jpg"
 
 function Home(){
     
@@ -11,7 +12,7 @@ function Home(){
         <Navbar />
             <Hero 
             cname = "hero"
-            heroImg = "src/assets/11.jpg"
+            heroImg = {HomeImg}
             title = "Your Journy Your Story"
             text = "Make Your Dream Tour With Us"
             url = "/"
